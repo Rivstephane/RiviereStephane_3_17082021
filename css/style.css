@@ -82,6 +82,12 @@ a, p, h4, h2 {
   font-family: roboto;
 }
 
+p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 @keyframes loading-spinner {
   0% {
     opacity: 1;
@@ -111,7 +117,7 @@ a, p, h4, h2 {
     max-width: 100%;
   }
   to {
-    max-width: 250px;
+    max-width: 240px;
   }
 }
 @keyframes progressive {
@@ -438,11 +444,6 @@ footer {
   flex-direction: row;
   justify-content: space-between;
 }
-.restaurant .type_plats .plats__texte p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
 .restaurant .type_plats .plats__prix {
   font-weight: bold;
 }
@@ -483,8 +484,8 @@ footer {
 .restaurant .type_plats .plats:hover .plats__check i {
   animation: check 1s linear forwards;
 }
-.restaurant .type_plats .plats:hover .plats__texte p {
-  animation: ellipse 500ms linear forwards;
+.restaurant .type_plats .plats:hover p {
+  animation: ellipse 400ms ease-out forwards;
 }
 
 .bouton_commander {
