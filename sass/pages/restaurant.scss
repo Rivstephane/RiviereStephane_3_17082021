@@ -31,11 +31,8 @@
         &__titre{
             text-transform:uppercase;
             & span{
-                text-underline-offset: 8px;
-                text-decoration-thickness: 3px;
-                text-decoration-line: underline ;
-                text-decoration-color:$couleur-tertiaire;
-                text-decoration-style: solid;
+                padding-bottom: 5px;
+                border-bottom: 3px solid $couleur-tertiaire;
             }
         }
         &__liste{
