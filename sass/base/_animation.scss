@@ -31,6 +31,14 @@
         max-width: 240px; 
     }
 }
+@keyframes translationy{
+    from{
+        transform: translatey(999px);
+    }
+    to {
+        transform: translatey(0);
+    }
+}
 @keyframes progressive {
     from {
         opacity:0;
