@@ -133,10 +133,14 @@
                         margin: 0;
                         transition: margin-right 1000ms;
                         & i{
-                            animation: check 1s linear forwards;
+                            animation: check 1s linear 1s forwards;
                         }
                     }
-
+                    & p{    
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
                 }
                 & p{
                     animation: ellipse 400ms ease-out forwards;
