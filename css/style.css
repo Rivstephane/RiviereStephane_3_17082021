@@ -109,7 +109,7 @@ h2 {
     transform: translateX(0);
   }
 }
-@keyframes check {
+@keyframes icon-rotation {
   from {
     transform: rotate(0deg);
   }
@@ -117,7 +117,7 @@ h2 {
     transform: rotate(360deg);
   }
 }
-@keyframes ellipse {
+@keyframes ellipsis {
   from {
     max-width: 100%;
   }
@@ -460,6 +460,7 @@ footer a {
   justify-content: space-between;
 }
 .restaurant .type_plats .plats__prix {
+  padding: 0 5px 0 5px;
   font-weight: bold;
 }
 .restaurant .type_plats .plats__check {
@@ -472,6 +473,7 @@ footer a {
   background-color: #99E2D0;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  transition: 1s ease-in-out;
 }
 .restaurant .type_plats .plats__check .fas {
   display: flex;
@@ -483,29 +485,26 @@ footer a {
   font-size: 120%;
   z-index: 2;
 }
+.restaurant .type_plats .plats p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: 1s ease-in-out;
+}
 .restaurant .type_plats .plats:hover {
   cursor: pointer;
 }
 .restaurant .type_plats .plats:hover .plats {
   width: auto;
 }
-.restaurant .type_plats .plats:hover .plats__animation {
-  margin-right: 20px;
-}
 .restaurant .type_plats .plats:hover .plats__check {
   margin: 0;
-  transition: margin-right 1000ms;
 }
 .restaurant .type_plats .plats:hover .plats__check i {
-  animation: check 1s linear 1s forwards;
-}
-.restaurant .type_plats .plats:hover .plats p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  animation: icon-rotation 1s linear 50ms forwards;
 }
 .restaurant .type_plats .plats:hover p {
-  animation: ellipse 400ms ease-out forwards;
+  animation: ellipsis 400ms ease-out forwards;
 }
 
 .bouton_commander {

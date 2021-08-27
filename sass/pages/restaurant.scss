@@ -96,6 +96,7 @@
                 justify-content: space-between;
             }
             &__prix{
+                padding: 0 5px 0 5px;
                 font-weight: bold;
             }
             &__check{
@@ -108,6 +109,7 @@
                 background-color: $couleur-tertiaire;
                 border-top-right-radius:20px;
                 border-bottom-right-radius:20px;
+                transition: 1s ease-in-out;
                 & .fas{
                     display:flex;
                     justify-content: center;
@@ -119,28 +121,25 @@
                     z-index: 2;
                 }
             }
+            & p{    
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                transition: 1s ease-in-out;
+            }
             &:hover{
                 cursor: pointer;
                 .plats{
                     width: auto;
-                    &__animation{
-                        margin-right: 20px;
-                    }
                     &__check{
                         margin: 0;
-                        transition: margin-right 1000ms;
                         & i{
-                            animation: check 1s linear 1s forwards;
+                            animation: icon-rotation 1s linear 50ms forwards;
                         }
-                    }
-                    & p{    
-                        overflow: hidden;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
                     }
                 }
                 & p{
-                    animation: ellipse 400ms ease-out forwards;
+                    animation: ellipsis 400ms ease-out forwards;
                 }
             }
 
