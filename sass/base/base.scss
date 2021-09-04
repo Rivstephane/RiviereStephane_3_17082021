@@ -11,3 +11,6 @@ a, p, h4, h2{
 h2{
    @include titre_index;
 }
+h4{
+    font-weight:normal;
+}
