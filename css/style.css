@@ -410,6 +410,7 @@ footer a {
   overflow: hidden;
 }
 .restaurant .type_plats__titre {
+  font-weight: normal;
   text-transform: uppercase;
 }
 .restaurant .type_plats__titre span {
