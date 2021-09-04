@@ -341,7 +341,7 @@ footer a {
 .choix__restaurant__background {
   display: flex;
 }
-.choix__restaurant__background .img {
+.choix__restaurant__background img {
   z-index: 1;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
