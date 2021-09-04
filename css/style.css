@@ -246,7 +246,7 @@ footer a {
   padding: 20px 0 20px 0;
 }
 .fonctionnement__titre {
-  padding-left: 50px;
+  padding-left: 25px;
   margin: 0;
   font-weight: bold;
   font-size: 200%;
@@ -261,14 +261,19 @@ footer a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
   }
 }
 .fonctionnement__element {
   display: flex;
   align-items: center;
   margin: 20px 0 20px 0;
+  margin-left: -20px;
   font-size: 120%;
+}
+@media screen and (min-width: 699px) {
+  .fonctionnement__element {
+    margin-left: auto;
+  }
 }
 .fonctionnement__element__nombres {
   display: flex;
