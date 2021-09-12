@@ -15,7 +15,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: left;
     padding: 5%;
     background-color:$font-gris ;
     margin-top: -15%;
@@ -156,7 +155,6 @@ body{
 .bouton_commander{
     display: flex;
     justify-content: center;
-    align-items: left;
     background-color:$font-gris ;
     padding-bottom: 50px;
 
