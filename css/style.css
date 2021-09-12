@@ -162,7 +162,6 @@ h4 {
   position: relative;
   z-index: 1;
   background-color: white;
-  margin: -0.5%;
 }
 .header__titre_site {
   display: flex;
@@ -208,7 +207,6 @@ body .main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 1%;
   border-top: 3px solid #cccccc;
   overflow: hidden;
 }
@@ -424,6 +422,10 @@ body .main {
   justify-content: space-between;
   margin: 5%;
   color: black;
+}
+
+body {
+  margin-top: 0;
 }
 
 /*---------- image du restaurant ----------*/
