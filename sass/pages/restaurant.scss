@@ -78,6 +78,10 @@ body{
             background-color: white;
             margin: $haut_bas;
             border-radius: 20px;
+            @include min-mobile-only{
+                min-width: 230px;
+                max-height: 150px;
+            }
             @include g-mobile-only{
                 margin: 5px;
                 width: 450px;
@@ -132,6 +136,11 @@ body{
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 transition: 1s ease-in-out;
+                @include min-mobile-only{
+                    overflow:visible;
+                    white-space: normal;
+                    text-overflow:initial;
+                }
             }
             &:hover{
                 cursor: pointer;
